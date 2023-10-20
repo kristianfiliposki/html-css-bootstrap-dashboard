@@ -8,8 +8,16 @@ li{list-style: none;padding-left: 0;}
     border-radius: 20px;
 }
 .title-card{background-color: rgb(179, 179, 179);}
-.class-checkA{
-    padding: 3px;
-    background-color: darkgreen;
+.class-checkA,.class-checkB,.class-checkC{
     text-align: center;
+}
+.class-checkA{    
+    background-color: darkgreen;
+}
+.class-checkB{
+    background-color: darkred;
+}
+
+.class-checkC{
+    background-color: gold;
 }
