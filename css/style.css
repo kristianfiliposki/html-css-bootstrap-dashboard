@@ -5,6 +5,5 @@ li{list-style: none;padding-left: 0;}
 .my-badges{
     background-color:rgb(82, 82, 82);
     filter: opacity(0.5);
-    padding: 10px 5px;
     border-radius: 20px;
 }
