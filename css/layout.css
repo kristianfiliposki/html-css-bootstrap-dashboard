@@ -1,3 +1,4 @@
+body{overflow-x:hidden;}
 .my-header{height: 4rem;}
 .my-side-bar,.wrapper-main{height:calc(100vh - 4rem);}
 .jambotroon{

@@ -9,6 +9,18 @@ li{list-style: none;padding-left: 0;}
     background-color:rgba(82, 82, 82,0.4);
     border-radius: 20px;
 }
+
+.my-hidden-view{
+    background: white;
+    width: 60vw !important;
+}
+
+.imput-hidden-page{
+    width: 100% ;
+}
+
+
+
 .actions{
     color: grey;
     border:2px solid black;
