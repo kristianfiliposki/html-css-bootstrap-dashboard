@@ -2,10 +2,16 @@
  padding: 10px;}
 .campanella{color: orange;}
 li{list-style: none;padding-left: 0;}
+.my-logo-sm{
+    width:40%;
+}
 .my-badges{
-    background-color:rgb(82, 82, 82);
-    filter: opacity(0.5);
+    background-color:rgba(82, 82, 82,0.4);
     border-radius: 20px;
+}
+.actions{
+    color: grey;
+    border:2px solid black;
 }
 .title-card{background-color: rgb(179, 179, 179);}
 .class-checkA,.class-checkB,.class-checkC{

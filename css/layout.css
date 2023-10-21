@@ -1,5 +1,6 @@
-.my-header{height: 8vh;}
-.my-nav-bar,.wrapper-main{height:calc(100vh - 8vh);}
+.my-header{height: 4rem;}
+.my-side-bar,.wrapper-main{height:calc(100vh - 4rem);}
 .jambotroon{
-    background-color:rgb(27, 114, 232) ;
+background-color:rgb(27, 114, 232);
 }
+.my-side-bar{background-image:url(../);}

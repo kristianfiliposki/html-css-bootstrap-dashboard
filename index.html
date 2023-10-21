@@ -13,19 +13,35 @@
     <title>bootstrap</title>
 </head>
 <body>
-
     <div class="conteiner-fluid w-100">
         <header>
             <div class="row">
                 <nav class="my-header navbar bg-body-tertiary">
-                    <div class="col-sm-2 offset-sm-1"><a class="navbar-brand"><img src="./img 4/logo.svg" alt="" class="img-fluid"></a></div>
-                    <div class="col-sm-7 row">
-                        <form class="d-flex e" role="search">
-                            <div class="input-group">
-                                <div class="input-group-text" id="btnGroupAddon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                                <input class="form-control" type="search" placeholder=" Prova a cercare:Lezioni di Laravel" aria-label="Search">
-                            </div>                            
-                        </form>
+                    <div class="col-sm-1 col-md-2 offset-sm-1">   
+                            <!-- logo img md/lg-->   
+                            <div  class="navbar-brand d-md-none">
+                                <a href="#">
+                                    <img src="./img 4/mobile-logo.png" alt="" class=" my-logo-sm"  >
+                                </a>
+                            </div>  
+                            <!-- logo img sm -->
+                            <div class="navbar-brand d-sm-none d-md-block">
+                                <a href="#">
+                                    <img src="./img 4/logo.svg" alt="" class="img-fluid ">
+                                </a>
+                            </div>
+                            <!-- logo img sm -->
+
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="row">
+                            <form class="d-flex e" role="search">
+                                <div class="input-group">
+                                    <div class="input-group-text" id="btnGroupAddon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                    <input class="form-control" type="search" placeholder=" Prova a cercare:Lezioni di Laravel" aria-label="Search">
+                                </div>                            
+                            </form>
+                        </div>
                     </div>
                     <div class="col-sm-1 campanella"><div><i class="fa-solid fa-bell"></i></div>
                 </nav>
@@ -33,8 +49,8 @@
         </header>
         
         <section class="d-flex">
-            <!-- nav-bar-side -->
-            <div class="col-1 bg-dark my-nav-bar fs-4">               
+            <!-- side-bar -->
+            <div class="col-1 bg-dark my-side-bar fs-4">               
                 <div class="d-flex flex-column justify-content-between ">
                     
                     <div class="text-white d-flex justify-content-center">
@@ -52,7 +68,7 @@
                     </div>            
                 </div>            
             </div>
-            <!-- nav-bar-side -->
+            <!-- side-bar -->
 
 
             <!-- main -->
@@ -62,26 +78,33 @@
                     <!-- wrapper -->
                     <div class="wrapper conteiner px-3">
                         <div class="row col-12 py-3">                           
-                            <div class="col-sm-12 col-md-4  row">
+                            <div class="col-sm-12 col-md-5  row">
                                 <div class="text-white  row">
                                     <div class="row">
-                                        <div class="col-3 col-md-6 col-lg-4 fs-sm-1"><h2>Boolean</h2></div>
-                                        <div class=" col-9 offset-md-2 col-md-4 col-lg-8 offset-lg-0"><button class="badges  text-white my-badges">Piano Blaze</button></div>    
+                                        <div class="col-3 col-md-7 col-lg-3  fs-sm-1"><h2>Boolean</h2></div>
+                                        <div class=" col-9 offset-md-1 col-md-4 col-lg-6 offset-lg-3 col-xl-8 offset-xl-1"><div class="badges p-2 text-white my-badges">Piano Blaze</div></div>    
                                     </div>
                                     <div class="row">
                                         <div class=" col-6 d-flex">
-                                            <button class="badges ps-2  text-white my-badges">3 app</button>
-                                            <div class="badges ps-2"><i class="fa-solid fa-angles-right pt-3 pb-3 "></i></div>
-                                            <button class="badges ms-1 text-white my-badges">+</button>    
+                                            <div class="badges p-2  text-white my-badges">3 app</div>
+                                            <div class="badges p-2 text-white"><i class="fa-solid fa-angles-right pt-3 pb-3 "></i></div>
+                                            <div class="badges p-2 text-white ms-1 text-white my-badges d-lg-none">+</div>
+                                            <div class="d-sm-none d-lg-inline">
+                                                <div class="d-flex text-white">
+                                                    <span class="badges ms-1 p-2 text-white my-badges d-lg-inline">Boolean mobile app</span>
+                                                    <span class="badges ms-1 p-2 text-white my-badges d-lg-inline">Boolean web app</span>
+                                                    <span class="badges ms-1 p-2 text-white my-badges d-lg-inline">Boolean blog app</span>
+                                                </div>
+                                            </div>    
                                         </div>    
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-4  row ">
+                            <div class="col-sm-12 col-md-3  row ">
                                 <div class="col-12 text-white ">Studenti online negli ultimi 30 minuti</div>
                                 <div class="col-1 text-white fs-3"><h2>125</h2></div>
                             </div>
-                            <div class="col-sm-12 col-md-4  row ">
+                            <div class="col-sm-12 col-md-3 offset-md-1  row ">
                                 <div class="col-3 col-md-7 text-white pt-2">Nuovo studente</div>
                                 <div class="col-9 col-md-5"><a href="#"><i class="fa-solid fa-plus border rounded p-3 text-white"></i></a></div>
                             </div>
@@ -93,7 +116,7 @@
                 <!-- cards -->
                 <div class="row my-3">
                     <!-- card left -->
-                    <div class="col-6 offset-1 ">
+                    <div class="col-12 col-lg-6 offset-md-1 mx-1">
                         <!-- card-table -->
                         <div class="card rounded">
                             <div class="title-card border rounded"><h2>Prossime Classi</h2></div>
@@ -109,101 +132,129 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Classe 75</td>
+                                        <td> 
+                                            <span><img src="./img 4/class-avatar.jpg" alt="foto" class="img-fluid" width="25" height="22"></span>
+                                            <span>Classe 75</span>
+                                        </td>
                                         <td class="d-sm-none d-md-table-cell badges">15 Feb 2021</td>
                                         <td class="d-sm-none d-md-table-cell badges">20%</td>
                                         <td class="text-white"><div class="class-checkA rounded">Done</div></td>
                                         <td>
-                                            <span><i class="fa-solid fa-pencil border rounded"></i></span>
-                                            <span><i class="fa-solid fa-trash border rounded"></i></span>
+                                            <span><i class="fa-solid fa-pencil border rounded actions"></i></span>
+                                            <span><i class="fa-solid fa-trash border rounded actions"></i></span>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>Classe 76</td>
+                                        <td>       
+                                            <span><img src="./img 4/class-avatar.jpg" alt="foto" class="img-fluid" width="25" height="22"></span>
+                                            <span>Classe 76</span>
+                                        </td>
                                         <td class="d-sm-none d-md-table-cell badges">16 Feb 2021</td>
                                         <td class="d-sm-none d-md-table-cell badges">20%</td>
                                         <td class="text-white"><div class="class-checkB rounded">Failed</div></td>
                                         <td>
-                                            <span><i class="fa-solid fa-pencil border rounded"></i></span>
-                                            <span><i class="fa-solid fa-trash border rounded"></i></span>
+                                            <span><i class="fa-solid fa-pencil border rounded actions"></i></span>
+                                            <span><i class="fa-solid fa-trash border rounded actions"></i></span>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>Classe 77</td>
+                                        <td>       
+                                            <span><img src="./img 4/class-avatar.jpg" alt="foto" class="img-fluid" width="25" height="22"></span>
+                                            <span>Classe 77</span>
+                                        </td>    
+                                        </td>
                                         <td class="d-sm-none d-md-table-cell badges">17 Feb 2021</td>
                                         <td class="d-sm-none d-md-table-cell badges">20%</td>
                                         <td class="text-white"><div class="class-checkC rounded">In process</div></td>
                                         <td>
-                                            <span><i class="fa-solid fa-pencil border rounded"></i></span>
-                                            <span><i class="fa-solid fa-trash border rounded"></i></span>
+                                            <span><i class="fa-solid fa-pencil border rounded actions"></i></span>
+                                            <span><i class="fa-solid fa-trash border rounded actions"></i></span>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>Classe 78</td>
+                                        <td>       
+                                            <span><img src="./img 4/class-avatar.jpg" alt="foto" class="img-fluid" width="25" height="22"></span>
+                                            <span>Classe 78</span>
+                                        </td>
                                         <td class="d-sm-none d-md-table-cell badges">18 Feb 2021</td>
                                         <td class="d-sm-none d-md-table-cell badges">20%</td>
                                         <td class="text-white"><div class="class-checkB rounded">Failed</div></td>
                                         <td>
-                                            <span><i class="fa-solid fa-pencil border rounded"></i></span>
-                                            <span><i class="fa-solid fa-trash border rounded"></i></span>
+                                            <span><i class="fa-solid fa-pencil border rounded actions"></i></span>
+                                            <span><i class="fa-solid fa-trash border rounded actions"></i></span>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>Classe 79</td>
+                                        <td>       
+                                            <span><img src="./img 4/class-avatar.jpg" alt="foto" class="img-fluid" width="25" height="22"></span>
+                                            <span>Classe 79</span>
+                                        </td>
                                         <td class="d-sm-none d-md-table-cell badges">19 Feb 2021</td>
                                         <td class="d-sm-none d-md-table-cell badges">20%</td>
                                         <td class="text-white"><div class="class-checkA rounded">Done</div></td>
                                         <td>
-                                            <span><i class="fa-solid fa-pencil border rounded"></i></span>
-                                            <span><i class="fa-solid fa-trash border rounded"></i></span>
+                                            <span><i class="fa-solid fa-pencil border rounded actions"></i></span>
+                                            <span><i class="fa-solid fa-trash border rounded actions"></i></span>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>Classe 80</td>
+                                        <td>       
+                                            <span><img src="./img 4/class-avatar.jpg" alt="foto" class="img-fluid" width="25" height="22"></span>
+                                            <span>Classe 80</span>
+                                        </td>
                                         <td class="d-sm-none d-md-table-cell badges">20 Feb 2021</td>
                                         <td class="d-sm-none d-md-table-cell badges">20%</td>
                                         <td class="text-white"><div class="class-checkB rounded">Failed</div></td>
                                         <td>
-                                            <span><i class="fa-solid fa-pencil border rounded"></i></span>
-                                            <span><i class="fa-solid fa-trash border rounded"></i></span>
+                                            <span><i class="fa-solid fa-pencil border rounded actions"></i></span>
+                                            <span><i class="fa-solid fa-trash border rounded actions"></i></span>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>Classe 81</td>
+                                        <td>       
+                                            <span><img src="./img 4/class-avatar.jpg" alt="foto" class="img-fluid" width="25" height="22"></span>
+                                            <span>Classe 81</span>
+                                        </td>
                                         <td class="d-sm-none d-md-table-cell badges">21 Feb 2021</td>
                                         <td class="d-sm-none d-md-table-cell badges">20%</td>
                                         <td class="text-white"><div class="class-checkA rounded">Done</div></td>
                                         <td>
-                                            <span><i class="fa-solid fa-pencil border rounded"></i></span>
-                                            <span><i class="fa-solid fa-trash border rounded"></i></span>
+                                            <span><i class="fa-solid fa-pencil border rounded actions"></i></span>
+                                            <span><i class="fa-solid fa-trash border rounded actions"></i></span>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>Classe 82</td>
+                                        <td>       
+                                            <span><img src="./img 4/class-avatar.jpg" alt="foto" class="img-fluid" width="25" height="22"></span>
+                                            <span>Classe 82</span>
+                                        </td>
                                         <td class="d-sm-none d-md-table-cell badges">22 Feb 2021</td>
                                         <td class="d-sm-none d-md-table-cell badges">20%</td>
                                         <td class="text-white"><div class="class-checkA rounded">Done</div></td>
                                         <td>
-                                            <span><i class="fa-solid fa-pencil border rounded"></i></span>
-                                            <span><i class="fa-solid fa-trash border rounded"></i></span>
+                                            <span><i class="fa-solid fa-pencil border rounded actions"></i></span>
+                                            <span><i class="fa-solid fa-trash border rounded actions"></i></span>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>Classe 83</td>
+                                        <td>       
+                                            <span><img src="./img 4/class-avatar.jpg" alt="foto" class="img-fluid" width="25" height="22"></span>
+                                            <span>Classe 83</span>
+                                        </td>
                                         <td class="d-sm-none d-md-table-cell badges">23 Feb 2021</td>
                                         <td class="d-sm-none d-md-table-cell badges">20%</td>
                                         <td class="text-white"><div class="class-checkA rounded">Done</div></td>
                                         <td>
-                                            <span><i class="fa-solid fa-pencil border rounded"></i></span>
-                                            <span><i class="fa-solid fa-trash border rounded"></i></span>
+                                            <span><i class="fa-solid fa-pencil border rounded actions"></i></span>
+                                            <span><i class="fa-solid fa-trash border rounded actions"></i></span>
                                         </td>
                                     </tr>
 
@@ -233,7 +284,7 @@
                         </div>
                     </div>
                     <!-- cards right -->
-                    <div class="col-4 ms-3">
+                    <div class="col-12 col-lg-4 ms-3">
                         <div class="card">
                             <div class="card-header fs-4">TODO</div>
                             
