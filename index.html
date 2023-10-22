@@ -77,16 +77,18 @@
                     <!-- wrapper -->
                     <div class="wrapper conteiner px-3">
                         <div class="row col-12 py-3">                           
-                            <div class="col-sm-12 col-md-5  row">
+                            <div class="col-sm-12 col-md-6  row">
                                 <div class="text-white  row">
                                 
                                     <div class="row">
-                                        <div class="col-3 col-md-7 col-lg-3  fs-sm-1"><h2>Boolean</h2></div>
-                                        <div class=" col-9 offset-md-1 col-md-4 col-lg-6 offset-lg-3 col-xl-8 offset-xl-1"><div class="badges p-2 text-white my-badges">Piano Blaze</div></div>    
+                                        <div class="col-12 fs-sm-1 d-flex col-badges my-1">
+                                            <h2 class="fe-2">Boolean</h2>
+                                            <div class="badges my-badges ms-3 p-1 ">Piano Blaze</div>
+                                        </div>
                                     </div>
 
                                     <div class="row">
-                                        <div class=" col-6 d-flex">
+                                        <div class=" col-12 d-flex">
                                             <!-- badges -->
                                             <div class="badges p-2  text-white my-badges">3 app</div>
                                             <div class="badges p-2 text-white"><i class="fa-solid fa-angles-right pt-3 pb-3 "></i></div>
@@ -105,7 +107,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-3  row ">
+                            <div class="col-sm-12 col-md-2  row ">
                                 <div class="col-12 text-white ">Studenti online negli ultimi 30 minuti</div>
                                 <div class="col-1 text-white fs-3"><h2>125</h2></div>
                             </div>
@@ -151,8 +153,8 @@
                                                         <div>Email</div>
                                                         <form class="d-flex e" role="search">
                                                             <div class="input-group">
-                                                                <div class="input-group-text" id="btnGroupAddon">@</div>
-                                                                <input class="form-control" type="search"  aria-label="Search">
+                                                                <div class="input-group-text button-hidden-view" id="btnGroupAddon">@</div>
+                                                                <input class="form-control button-hidden-view" type="mail"  aria-label="mail">
                                                             </div>                            
                                                         </form>
                                                     </div>
@@ -181,8 +183,34 @@
                                                     </div>
 
                                                     <div class="col-4">
-                                                        <div>Stato</div>                                                                                                                      
-                                                        <input type="text" class="imput-hidden-page"> 
+                                                        <div class="dropdown">
+                                                            <div>Stato</div>
+                                                            <div class="button-hidden-view d-flex align-content-center">
+                                                                <button class="btn  dropdown-toggle imput-hidden-page " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                   <div class="relative option-nation">
+                                                                    <span>Scegli...</span>
+                                                                    <span><i class="fa-solid fa-chevron-down"></i></span>
+
+                                                                </div> 
+                                                                  </button>
+                                                                <ul class="dropdown-menu" >
+                                                                <li class="dropdown-item">
+                                                                    <span>italia</span>
+                                                                    <span><img src="./flags/italy.png" alt="" class="img-fluid"></span>
+                                                                </li>
+                                                                <li class="dropdown-item">
+                                                                    <span>Germania</span>
+                                                                    <span><img src="./flags/german.png" alt="" class="img-fluid"></span>
+                                                                </li>
+                                                                <li class="dropdown-item">
+                                                                    <span>Inghilterra</span>
+                                                                    <span><img src="./flags/england.png" alt="" class="img-fluid"></span>
+                                                                </li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                    
                                                     </div>
 
                                                     <div class="col-3">
@@ -229,7 +257,7 @@
                                                 <!--row 8 -->
                                                 <div class="row my-4">
                                                     <div class="col-11 offset-1">
-                                                        <button type="button" class="btn btn-primary">Salva</button>
+                                                        <button type="submit" class="btn btn-primary">Salva</button>
                                                         <button type="button" class="btn btn-warning">Svuota</button>
 
                                                     </div>
